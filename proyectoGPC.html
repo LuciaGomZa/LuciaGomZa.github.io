@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<!-- 
+    PROYECTO FINAL GRÁFICOS POR COMPUTADOR
+-->
+
+<html lang = "es">
+    <head>
+        <meta charset='utf-8'>
+        <title>Plantilla WebGL</title>
+        <style type="text/css">
+            #mainHeader{
+                padding:5px;
+                margin:10px 10px;
+                color:#333;
+                text-align:left;
+                background-image:url('mascarillas.jpg');
+                background-position:center;
+                background-size: 100% 100%;
+                font-size: 25px;
+                
+                font-family: serif;
+            }
+            #other{
+                border:3px dotted #ccc;
+                background-color: white;
+                font-style: italic;
+            }
+            #main-footer{
+                color:#333;
+                text-align:center;
+            }
+            #gui_container { 
+                position: absolute; 
+                top: 50%; 
+                right: 0%;
+            }
+        </style>
+    </head>
+    <body>
+        
+        <header id="mainHeader">
+            <h1>Designed how you want.</h1>
+        </header>
+
+        <!-- Contenedor del canvas -->
+        <div id = "container" ></div>
+        <div  id = "gui_container"> </div>
+
+        <!-- Librerías auxiliares sobre three.js"-->
+        <script src="lib/three.min_r96.js"></script>
+        <script src="lib/OrbitControls.js"></script>
+        <script src="lib/stats_r16.min.js"></script>
+        <script src="lib/Coordinates.js"></script>
+        <script src="lib/dat.gui.min.js"></script>
+        <script src="lib/tween_18.js"></script>
+        <script src="lib/cannon_062.js"></script>
+        <script src="lib/threex.keyboardstate.js"></script>
+        
+        <!-- Mi aplicacion -->
+        <script src="threejs/mascarilla.js"></script>
+    
+    <footer id="main-footer">
+        <p>Copyright &copy; 2020 Lucía Gomez Zaragozá </p>
+    </footer>
+    
+    </body>
+
+    
+</html>
+
+
+<!--
+    En el script de threejs:
+     // Determinar el área de dibujo -- AQUI HABRA QUE CAMBIAR EL TAMAÑO, PORQUE ASI SE AJUSTA A TODA LA PAGINA
+     renderer.setSize( window.innerWidth, window.innerHeight);
+
+     // Razon de aspecto (ar)  -- PONER LAS MISMAS MEDIDAS QUE ARRIBA
+     var ar = window.innerWidth / window.innerHeight;
+
+     //  Conectar el canvas al cuerpo de la página -- AQUI HABRA QUE CONECTARLO A LA PARTE QUE QUIERA
+     document.getElementById("container").appendChild(renderer.domElement);
+
+-->

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<!-- 
+    Seminario GPC #1. Pagina de carga de aplicaciones en WebGL
+-->
+<html lang = "es">
+    <head>
+        <meta charset='utf-8'>
+        <title>Plantilla WebGL</title>
+        <style>
+            body{background-color: white; margin: 0px; overflow: hidden;}
+            canvas{background-color: white;}
+        </style>
+    </head>
+    <body onload='main()'>
+        <canvas id="canvas" width="500" height="500"></canvas>
+
+        <!-- Librerías auxiliares (c)"WebProgramming Guide"-->
+        <script src="lib/webgl-utils.js"></script>
+        <script src="lib/webgl-debug.js"></script>
+        <script src="lib/cuon-utils.js"></script>
+        <script src="lib/cuon-matrix.js"></script>
+
+        <!-- Mi aplicacion -->
+        <script src="js/ClickPuntosBOs.js"></script>
+        <!--
+            Web creada durante el seminario 1 (WebGLapp.html):
+            <script src="js/ClickarPuntos.js"></script>
+            <script src="js/PintarCanvas.js"></script>
+        -->
+        
+    </body>
+</html>
